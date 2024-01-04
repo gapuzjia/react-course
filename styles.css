@@ -1,0 +1,26 @@
+/* selector starts with a hash, is an id */
+#main_heading, h2 {
+    text-align: center;
+}
+h1{
+    text-align: right;
+}
+
+.zebra{
+    /* applies to class zebra */
+    background-color: bisque;
+}
+
+/* carat means direct child, can be other things */
+h1 > code{
+    /* direct code element child of h1 */
+}
+
+h1 > .zebra{
+    /* a zebra class inside of a h1 */
+}
+
+p > code{
+    /* code elements of p */
+}
+
