@@ -1,14 +1,29 @@
+body{
+    /* applies to entire body */
+    font-family: "Mulish";
+}
+
 /* selector starts with a hash, is an id */
 #main_heading, h2 {
     text-align: center;
 }
 h1{
     text-align: right;
+    font-family: 'Mulish', sans-serif;
 }
 
 .zebra{
-    /* applies to class zebra */
-    background-color: bisque;
+    font-size: 1rem; /* 1 rem usually 16 px */
+    color: white;
+    background-color: blue;
+    width: fit-content;
+    border: 2px solid black;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-weight: 800; 
+    /* boldness(400 is normal and 700 is bold) */
+    /* can only use weights that you imported! */
 }
 
 /* carat means direct child, can be other things */
@@ -20,7 +35,86 @@ h1 > .zebra{
     /* a zebra class inside of a h1 */
 }
 
-p > code{
+p {
     /* code elements of p */
+}
+
+
+
+#subscribe_button{
+    font-size: 1rem; /* 1 rem usually 16 px */
+    color: white;
+    background-color: blue;
+    width: fit-content;
+    border: 2px solid black;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-weight: 800; 
+    /* boldness(400 is normal and 700 is bold) */
+    /* can only use weights that you imported! */
+    margin-left: auto;
+    margin-right: auto;
+    display:inline-block;
+}
+
+#subscribe_button:hover{
+    font-size: 1rem; /* 1 rem usually 16 px */
+    color: white;
+    background-color: red;
+    width: fit-content;
+    border: 2px solid black;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-weight: 800; 
+    /* boldness(400 is normal and 700 is bold) */
+    /* can only use weights that you imported! */
+    margin-left: auto;
+    margin-right: auto;
+    display:inline-block;
+}
+#subscribe_button:active{
+    font-size: 1rem; /* 1 rem usually 16 px */
+    color: white;
+    background-color: green;
+    width: fit-content;
+    border: 2px solid black;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-weight: 800; 
+    /* boldness(400 is normal and 700 is bold) */
+    /* can only use weights that you imported! */
+    margin-left: auto;
+    margin-right: auto;
+    display:inline-block;
+}
+
+#button{
+    font-size: 1rem; /* 1 rem usually 16 px */
+    color: white;
+    background-color: blue;
+    width: 200px;
+    border: 2px solid black;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-weight: 800; 
+    /* boldness(400 is normal and 700 is bold) */
+    /* can only use weights that you imported! */
+    margin-left: auto;
+    margin-right: auto;
+    display:inline-block;
+}
+
+#flex_div{
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    justify-content: stretch;
+    /* look up gat on tailwind css */
 }
 
