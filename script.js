@@ -1,8 +1,6 @@
 let x = 1;
 console.log(x);
-const mainHeading = document.getElementById("main_heading");
-mainHeading.innerHTML = "Anotherer heading";
-mainHeading.style = "color: red";
+
 
 
 //---------------
@@ -24,4 +22,13 @@ console.log(typeof myVariable);
 const myFunction = (x) => x * x;
 console.log(myFunction);
 
+//--------------------
+const arrowFunction = () => {
+    const mainHeading = document.getElementById("main_heading");
+    mainHeading.innerHTML = "Anotherer heading";
+    mainHeading.style = "color: red";
+}
+
+//click anywhere, onclick function will go
+document.addEventListener("click", arrowFunction);
 

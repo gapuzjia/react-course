@@ -2,14 +2,6 @@
 <html>
     <head>
         <title>hello again!</title>
-        <!-- inside style is CSS land! -->
-        <!-- can apply to id names OR types of elements (h1, p) -->
-        <!-- is in header
-            <style>
-            
-            </style>
-        -->
-        
 
         <!-- this is what links css to html! -->
         <link rel="stylesheet" href="styles.css"/>
@@ -17,17 +9,26 @@
         <!-- following is copied from google fonts --><link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+         <!-- this is what links javascript to html -->
+        <script src="script.js"></script>
     </head>
 
     <body>
+        <div>
+            <!-- if click is in div, applies when you click the div -->
+            <h1 id="main_heading" style = "font-size: 1em;" onclick = "arrowFunction()"> CSS Practice!</h1>
+            
+            <h1>another h1</h1>
+            <p> this is a paragraph</p>
+
+            <!-- button -->
+            <a class="zebra" href = "aboutMe.html">link classed zebra</a>
+
+            <h2>should be text align center!</h2>
+
+            </div>
         
-        <h1 id="main_heading" style = "font-size: 1em;"> CSS Practice!</h1>
-        <h1>another h1</h1>
-        <p> this is a paragraph</p>
-        <p class="zebra">paragraph classed zebra</p>
-        <h2>should be text align center!</h2>
         
-        <!-- this is what links javascript to html -->
-        <script src="script.js"></script>
     </body>
 </html>
